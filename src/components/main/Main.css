@@ -1,0 +1,7 @@
+@media (max-width: 853px) {
+  .main {
+    text-align: start;
+    padding: 20px !important;
+    align-items: center;
+  }
+}

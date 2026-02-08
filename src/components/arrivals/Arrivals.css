@@ -1,0 +1,85 @@
+.arrivals {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  gap: 20px;
+  align-items: center;
+  padding: 50px 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.arrivals--title {
+  font-family: monospace;
+  font-size: 200px;
+  font-weight: 600;
+  color: white;
+}
+
+.arrivals--title span {
+  color: #2e2e2e;
+}
+
+.arrivals__cart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.arrivals__cart--toptext {
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.arrivals__cart--title {
+  color: #2e2e2e;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.arrivals__cart--des {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 400px;
+  text-align: center;
+}
+
+.arrivals__cart--btn {
+  padding: 16px 32px;
+  color: white;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 912px) {
+  .arrivals--title {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 412px) {
+  .arrivals--title {
+    font-size: 50px;
+  }
+
+  .arrivals__cart--title {
+    font-size: 25px;
+  }
+
+  .arrivals__cart--des {
+    font-size: 15px;
+  }
+
+  .arrivals__cart--toptext {
+    font-size: 20px;
+  }
+}

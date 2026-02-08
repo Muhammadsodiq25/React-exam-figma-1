@@ -1,0 +1,131 @@
+.footer {
+  display: flex;
+  margin-top: 200px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 50px;
+  position: relative;
+  bottom: 0%;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+.footer__left p {
+  font-family: monospace, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #cfcfcf;
+  width: 450px;
+}
+
+.footer__left__email {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer__left--email {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  color: #727272;
+  border-radius: 8px;
+  outline: none;
+  padding-right: 90px;
+}
+
+.footer__left__email button {
+  background-color: #00faeb;
+  padding: 10px 32px;
+  border-radius: 8px;
+  color: #2e2e2e;
+  font-family: monospace, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer__cont {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  align-items: start;
+}
+
+.footer__cart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+.footer__cart--title {
+  font-family: monospace, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.footer__cart__links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: safe;
+}
+
+.footer__cart--link {
+  font-family: monospace, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #cfcfcf;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .footer__left {
+    text-align: center;
+    align-items: center;
+  }
+  .footer {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 412px) {
+  .footer__left {
+    text-align: center;
+    align-items: center;
+  }
+  .footer__left img {
+    width: 250px;
+  }
+  .footer__left p {
+    font-size: 15px;
+    width: auto;
+  }
+
+  .footer__left--email {
+    font-size: 15px;
+    padding-right: 0px;
+  }
+  .footer__left__email {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__left__email button {
+    font-size: 12px;
+  }
+
+  .footer__cont {
+    flex-wrap: wrap;
+  }
+}

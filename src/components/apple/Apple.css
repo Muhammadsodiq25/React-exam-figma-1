@@ -1,0 +1,78 @@
+.apple {
+  display: flex;
+  padding: 80px;
+  border-radius: 8px;
+  margin-top: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apple__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+
+.apple__left h3 {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 34px;
+  width: 400px;
+}
+
+.apple__left__dess {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+
+.apple__left--des {
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2e2e2e;
+}
+
+.apple__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+
+.apple__right h3 {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 48px;
+}
+.apple__right p {
+  font-family: monospace, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  width: 350px;
+  text-align: end;
+}
+
+.apple__right button {
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 16px 32px;
+  cursor: pointer;
+  font-family: monospace, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (max-width: 912px) {
+  .apple {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .apple__right {
+    text-align: center;
+  }
+}
