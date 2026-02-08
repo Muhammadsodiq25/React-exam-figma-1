@@ -27,7 +27,7 @@ const Header = ({logo, search,searchIcon, icon2, allCategories, links, location}
         </nav>
           <hr />
         </div>
-        <header className="header2" style={{display: 'none', padding:'20px', alignItems:'center', justifyContent:'space-between'}}>
+        <header className="header2" style={{ display: 'none', padding:'20px', alignItems:'center', justifyContent:'space-between'}}>
           <Link to={'/'} style={{cursor:'pointer'}}><img className="header-logo" src={logo} alt="" /></Link>
           <AiOutlineBars onClick={()=> setOpen(!open)} style={{fontSize:'40px', cursor:'pointer'}}/>
         </header>

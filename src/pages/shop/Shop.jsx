@@ -1,6 +1,6 @@
 import Shopmain from "../../components/shopMain/Shopmain"
 import shopmainBg from '../../assets/shopmain-bg.jpg'
-import Shopcontent from "../../components/shopContent/shopcontent"
+import Shopcontent from "../../components/shopContent/Shopcontent"
 import shopcontentPriceImg from "../../assets/shopcontent-price-img.png"
 import shopcontentColorImg from "../../assets/shopcontent-color-img.png"
 import ratedContImg from "../../assets/rated-cont-img.avif"
