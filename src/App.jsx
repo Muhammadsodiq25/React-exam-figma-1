@@ -30,10 +30,13 @@ const footer__cont = [
   },
 ]
 
+const responsiveNavbar__contact = ['600 N Washington Ave Suite C203','+008 0642 118','bestxtore@gmail.com']
+
+
 const App = () => {
   return (
     <div className="container">
-      <Header location={headerLocation} logo={headerLogo} search={'Search...'} searchIcon={headerSearchIcon} icon2={headerTopIconsIcon2} allCategories={'All Categories'} links={header__links}/>
+      <Header responsiveContact={'Contact Us'} responsive={responsiveNavbar__contact} location={headerLocation} logo={headerLogo} search={'Search...'} searchIcon={headerSearchIcon} icon2={headerTopIconsIcon2} allCategories={'All Categories'} links={header__links}/>
       <Routes>
         <Route path="/" element={<Home mainApple={mainAppleIcon} mainBg={mainBg}/>}/>
         <Route path="/shop" element={<Shop/>}/>

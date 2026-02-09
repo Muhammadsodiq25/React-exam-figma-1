@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import "./Header.css"
 import { useState } from "react"
 
-const Header = ({logo, search,searchIcon, icon2, allCategories, links, location}) => {
+const Header = ({logo, search,searchIcon, icon2, allCategories, links, location, responsive, responsiveContact}) => {
   const [open,setOpen] = useState(false)
   return (
       <div>
@@ -26,6 +26,18 @@ const Header = ({logo, search,searchIcon, icon2, allCategories, links, location}
           </ul>
         </nav>
           <hr />
+          <div style={{display:'flex', flexDirection:'column', gap:'20px', alignItems:'start'}}>
+            <h3 style={{fontFamily:'monospace', fontSize:'25px', fontWeight:'700'}}>{responsiveContact}</h3>
+            <ul style={{display:'flex', flexDirection:'column', gap:'15px', alignItems:'start'}}>
+              {
+                responsive.map((con,index) => {
+                  return <li key={index}>
+                    <p style={{fontFamily:'monospace', fontWeight:'500', color:'black', fontSize:'20px'}}>{con}</p>
+                  </li>
+               })
+              }
+            </ul>
+          </div>
         </div>
         <header className="header2" style={{ display: 'none', padding:'20px', alignItems:'center', justifyContent:'space-between'}}>
           <Link to={'/'} style={{cursor:'pointer'}}><img className="header-logo" src={logo} alt="" /></Link>
