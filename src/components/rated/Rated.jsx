@@ -4,7 +4,7 @@ const Rated = ({title, cont}) => {
   return (
     <div className="rated">
       <div className="newArrivals__top">
-        <h3 className="newArrivals--title">{title}</h3>
+        <h3 className="newArrivals--title rated--title">{title}</h3>
         <div style={{display:'flex', gap:'20px'}}>
           <button style={{fontSize:'40px', cursor:'pointer', borderRadius:'50px', background:'inherit', color:'black', padding:'10px 20px', paddingTop:'0px'}}>‹</button>
           <button style={{fontSize:'40px', cursor:'pointer', borderRadius:'50px', background:'inherit', color:'black', padding:'10px 20px', paddingTop:'0px'}}>›</button>

@@ -76,3 +76,28 @@
     text-align: center;
   }
 }
+
+@media (max-width: 412px) {
+  .apple__left h3 {
+    font-size: 25px !important;
+    width: auto;
+  }
+
+  .apple {
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .apple__right h3 {
+    font-size: 25px;
+  }
+
+  .apple__right p {
+    font-size: 20px;
+  }
+
+  .apple__right button {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+}

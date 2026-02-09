@@ -108,3 +108,9 @@
   font-size: 14px;
   color: #727272;
 }
+
+@media (max-width: 412px) {
+  .rated--title {
+    font-size: 22px;
+  }
+}
